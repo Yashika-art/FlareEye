@@ -89,20 +89,6 @@ unchanged — they only need a dataframe with the same columns (`lat`, `lng`,
 `day`, `frp`, `brightness_k`, `confidence`, `wind_kmh`, `swir_reflectance`,
 `dist_infra_km`, `dist_road_km`, `land_cover`, `true_class` for training).
 
-## Running it yourself (in order)
-
-```bash
-pip install -r requirements.txt
-python3 train_model.py           # builds dataset, trains + evaluates the classifier
-python3 classify_events.py       # applies it, writes outputs/events.json
-python3 train_forecast_model.py  # builds daily series, trains the forecaster
-python3 forecast_events.py       # predicts next-event activity, writes outputs/forecasts.json
-python3 build_dashboard.py       # embeds everything into the final HTML app
-```
-
-Then open `outputs/flareeye_ai_dashboard.html` in a browser — no server
-needed, everything is embedded directly in the file.
-
 ## Files
 
 ```
