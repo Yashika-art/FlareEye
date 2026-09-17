@@ -89,26 +89,6 @@ unchanged — they only need a dataframe with the same columns (`lat`, `lng`,
 `day`, `frp`, `brightness_k`, `confidence`, `wind_kmh`, `swir_reflectance`,
 `dist_infra_km`, `dist_road_km`, `land_cover`, `true_class` for training).
 
-## Pushing this to GitHub
-
-The repo is set up so the code, models config, and the final demo app are
-tracked, while the large regenerable CSVs and `.joblib` model files are
-git-ignored to keep the repo lightweight (see `.gitignore` — comment those
-lines out if you'd rather commit the data/models directly).
-
-```bash
-cd flareeye_ml
-git init
-git add .
-git commit -m "FlareEye: AI thermal event classifier + next-event forecaster"
-git branch -M main
-git remote add origin https://github.com/<your-username>/flareeye.git
-git push -u origin main
-```
-
-Then run the 5 commands below once locally (or in a GitHub Action) to
-regenerate `data/`, `models/`, and refresh `outputs/flareeye_ai_dashboard.html`.
-
 ## Running it yourself (in order)
 
 ```bash
