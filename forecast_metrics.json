@@ -1,0 +1,9 @@
+{
+  "frp_mae": 21.98,
+  "frp_r2": 0.415,
+  "recurrence_accuracy": 0.8952,
+  "recurrence_f1": 0.8504,
+  "n_train_samples": 52380,
+  "n_test_samples": 12960,
+  "train_test_day_cutoff": 292
+}

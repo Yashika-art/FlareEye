@@ -1,0 +1,6267 @@
+{
+  "FE-1000": {
+    "predicted_frp_next": 68.9,
+    "recurrence_probability": 92.2,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      174.6,
+      87.7,
+      71.9,
+      37.4,
+      31.8,
+      37.7,
+      66.8,
+      169.0,
+      3.0,
+      97.8,
+      86.5,
+      42.6,
+      112.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 68.9,
+        "active_probability": 92.2
+      },
+      {
+        "frp": 70.3,
+        "active_probability": 92.1
+      },
+      {
+        "frp": 69.0,
+        "active_probability": 92.1
+      }
+    ]
+  },
+  "FE-1001": {
+    "predicted_frp_next": 75.6,
+    "recurrence_probability": 91.8,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      145.5,
+      154.5,
+      180.4,
+      59.1,
+      125.5,
+      112.0,
+      0.0,
+      101.7,
+      72.4,
+      77.1,
+      121.4,
+      99.2,
+      46.1
+    ],
+    "forecast_3day": [
+      {
+        "frp": 75.6,
+        "active_probability": 91.8
+      },
+      {
+        "frp": 75.9,
+        "active_probability": 91.4
+      },
+      {
+        "frp": 73.1,
+        "active_probability": 91.6
+      }
+    ]
+  },
+  "FE-1002": {
+    "predicted_frp_next": 69.8,
+    "recurrence_probability": 91.4,
+    "trend": "Rising",
+    "history_14d": [
+      44.3,
+      131.8,
+      78.7,
+      0.0,
+      184.8,
+      221.9,
+      3.0,
+      65.4,
+      23.3,
+      0.0,
+      72.9,
+      78.6,
+      10.0,
+      116.9
+    ],
+    "forecast_3day": [
+      {
+        "frp": 69.8,
+        "active_probability": 91.4
+      },
+      {
+        "frp": 75.1,
+        "active_probability": 91.4
+      },
+      {
+        "frp": 77.0,
+        "active_probability": 91.3
+      }
+    ]
+  },
+  "FE-1003": {
+    "predicted_frp_next": 71.9,
+    "recurrence_probability": 91.2,
+    "trend": "Stable",
+    "history_14d": [
+      3.0,
+      113.8,
+      20.2,
+      33.1,
+      28.4,
+      38.1,
+      67.3,
+      0.0,
+      100.2,
+      12.2,
+      98.6,
+      94.1,
+      53.7,
+      177.4
+    ],
+    "forecast_3day": [
+      {
+        "frp": 71.9,
+        "active_probability": 91.2
+      },
+      {
+        "frp": 66.7,
+        "active_probability": 90.8
+      },
+      {
+        "frp": 72.4,
+        "active_probability": 91.0
+      }
+    ]
+  },
+  "FE-1004": {
+    "predicted_frp_next": 76.8,
+    "recurrence_probability": 91.8,
+    "trend": "Rising",
+    "history_14d": [
+      31.7,
+      0.0,
+      0.0,
+      118.6,
+      0.0,
+      0.0,
+      30.1,
+      113.3,
+      0.0,
+      27.9,
+      85.9,
+      109.3,
+      129.6,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 76.8,
+        "active_probability": 91.8
+      },
+      {
+        "frp": 73.1,
+        "active_probability": 90.9
+      },
+      {
+        "frp": 74.1,
+        "active_probability": 90.9
+      }
+    ]
+  },
+  "FE-1005": {
+    "predicted_frp_next": 72.4,
+    "recurrence_probability": 92.0,
+    "trend": "Rising",
+    "history_14d": [
+      68.3,
+      0.0,
+      84.6,
+      33.4,
+      99.8,
+      31.7,
+      22.6,
+      12.5,
+      0.0,
+      98.7,
+      38.7,
+      46.5,
+      130.4,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 72.4,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 75.0,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 73.9,
+        "active_probability": 92.6
+      }
+    ]
+  },
+  "FE-1006": {
+    "predicted_frp_next": 72.4,
+    "recurrence_probability": 91.8,
+    "trend": "Falling",
+    "history_14d": [
+      209.9,
+      74.3,
+      44.7,
+      78.7,
+      0.0,
+      43.6,
+      122.7,
+      86.7,
+      92.0,
+      152.0,
+      100.0,
+      105.9,
+      150.1,
+      163.9
+    ],
+    "forecast_3day": [
+      {
+        "frp": 72.4,
+        "active_probability": 91.8
+      },
+      {
+        "frp": 69.5,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 71.4,
+        "active_probability": 92.4
+      }
+    ]
+  },
+  "FE-1007": {
+    "predicted_frp_next": 77.1,
+    "recurrence_probability": 87.6,
+    "trend": "Stable",
+    "history_14d": [
+      163.0,
+      0.0,
+      84.0,
+      134.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      89.8,
+      0.0,
+      148.4,
+      214.1,
+      0.0,
+      111.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 77.1,
+        "active_probability": 87.6
+      },
+      {
+        "frp": 76.5,
+        "active_probability": 87.3
+      },
+      {
+        "frp": 71.5,
+        "active_probability": 88.1
+      }
+    ]
+  },
+  "FE-1008": {
+    "predicted_frp_next": 75.4,
+    "recurrence_probability": 90.5,
+    "trend": "Rising",
+    "history_14d": [
+      123.1,
+      128.7,
+      0.0,
+      120.4,
+      0.0,
+      0.0,
+      99.4,
+      24.5,
+      45.8,
+      15.7,
+      106.1,
+      103.4,
+      66.7,
+      80.9
+    ],
+    "forecast_3day": [
+      {
+        "frp": 75.4,
+        "active_probability": 90.5
+      },
+      {
+        "frp": 72.9,
+        "active_probability": 91.0
+      },
+      {
+        "frp": 71.6,
+        "active_probability": 91.0
+      }
+    ]
+  },
+  "FE-1009": {
+    "predicted_frp_next": 72.5,
+    "recurrence_probability": 90.5,
+    "trend": "Falling",
+    "history_14d": [
+      218.3,
+      79.2,
+      80.7,
+      138.7,
+      104.9,
+      103.1,
+      70.9,
+      87.9,
+      135.5,
+      27.8,
+      0.0,
+      174.5,
+      171.9,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 72.5,
+        "active_probability": 90.5
+      },
+      {
+        "frp": 73.9,
+        "active_probability": 90.4
+      },
+      {
+        "frp": 74.5,
+        "active_probability": 91.4
+      }
+    ]
+  },
+  "FE-1010": {
+    "predicted_frp_next": 85.5,
+    "recurrence_probability": 90.5,
+    "trend": "Falling",
+    "history_14d": [
+      51.0,
+      3.6,
+      74.9,
+      145.1,
+      162.2,
+      96.5,
+      83.5,
+      56.3,
+      117.0,
+      207.0,
+      163.2,
+      221.5,
+      86.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 85.5,
+        "active_probability": 90.5
+      },
+      {
+        "frp": 83.3,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 74.6,
+        "active_probability": 91.9
+      }
+    ]
+  },
+  "FE-1011": {
+    "predicted_frp_next": 80.1,
+    "recurrence_probability": 91.5,
+    "trend": "Rising",
+    "history_14d": [
+      48.3,
+      130.6,
+      0.0,
+      59.7,
+      43.4,
+      79.3,
+      79.1,
+      114.6,
+      103.4,
+      0.0,
+      74.8,
+      3.0,
+      112.5,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 80.1,
+        "active_probability": 91.5
+      },
+      {
+        "frp": 80.2,
+        "active_probability": 91.2
+      },
+      {
+        "frp": 80.2,
+        "active_probability": 91.1
+      }
+    ]
+  },
+  "FE-1012": {
+    "predicted_frp_next": 6.1,
+    "recurrence_probability": 3.2,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 6.1,
+        "active_probability": 3.2
+      },
+      {
+        "frp": 13.6,
+        "active_probability": 17.9
+      },
+      {
+        "frp": 29.1,
+        "active_probability": 25.1
+      }
+    ]
+  },
+  "FE-1013": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 1.0,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 1.0
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 1.0
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 1.0
+      }
+    ]
+  },
+  "FE-1014": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      }
+    ]
+  },
+  "FE-1015": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1016": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1017": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1018": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1019": {
+    "predicted_frp_next": 34.1,
+    "recurrence_probability": 22.5,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      222.7,
+      0.0,
+      0.0,
+      334.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 34.1,
+        "active_probability": 22.5
+      },
+      {
+        "frp": 52.9,
+        "active_probability": 31.7
+      },
+      {
+        "frp": 54.6,
+        "active_probability": 30.8
+      }
+    ]
+  },
+  "FE-1020": {
+    "predicted_frp_next": 57.6,
+    "recurrence_probability": 84.0,
+    "trend": "Rising",
+    "history_14d": [
+      108.7,
+      95.9,
+      0.0,
+      0.0,
+      57.7,
+      15.5,
+      114.5,
+      0.0,
+      0.0,
+      49.9,
+      0.0,
+      79.3,
+      81.3,
+      117.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 57.6,
+        "active_probability": 84.0
+      },
+      {
+        "frp": 62.1,
+        "active_probability": 84.6
+      },
+      {
+        "frp": 61.3,
+        "active_probability": 84.6
+      }
+    ]
+  },
+  "FE-1021": {
+    "predicted_frp_next": 47.8,
+    "recurrence_probability": 42.5,
+    "trend": "Falling",
+    "history_14d": [
+      316.5,
+      0.0,
+      0.0,
+      301.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      91.9,
+      0.0,
+      302.0,
+      0.0,
+      0.0,
+      195.1
+    ],
+    "forecast_3day": [
+      {
+        "frp": 47.8,
+        "active_probability": 42.5
+      },
+      {
+        "frp": 71.3,
+        "active_probability": 53.8
+      },
+      {
+        "frp": 50.5,
+        "active_probability": 50.6
+      }
+    ]
+  },
+  "FE-1022": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1023": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.6,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.6
+      }
+    ]
+  },
+  "FE-1024": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1025": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1026": {
+    "predicted_frp_next": 0.6,
+    "recurrence_probability": 1.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.6,
+        "active_probability": 1.4
+      },
+      {
+        "frp": 0.6,
+        "active_probability": 1.4
+      },
+      {
+        "frp": 1.1,
+        "active_probability": 4.1
+      }
+    ]
+  },
+  "FE-1027": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1028": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1029": {
+    "predicted_frp_next": 0.4,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.4,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.4,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.9,
+        "active_probability": 2.9
+      }
+    ]
+  },
+  "FE-1030": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1031": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      }
+    ]
+  },
+  "FE-1032": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1033": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1034": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1035": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1036": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1037": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1038": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1039": {
+    "predicted_frp_next": 0.1,
+    "recurrence_probability": 0.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.1,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.3
+      }
+    ]
+  },
+  "FE-1040": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1041": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1042": {
+    "predicted_frp_next": 0.3,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.3,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1043": {
+    "predicted_frp_next": 0.3,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.3,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1044": {
+    "predicted_frp_next": 0.3,
+    "recurrence_probability": 0.9,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.3,
+        "active_probability": 0.9
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.9
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.9
+      }
+    ]
+  },
+  "FE-1045": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1046": {
+    "predicted_frp_next": 0.7,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.7,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.7,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 1.2,
+        "active_probability": 1.9
+      }
+    ]
+  },
+  "FE-1047": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1048": {
+    "predicted_frp_next": 74.1,
+    "recurrence_probability": 92.0,
+    "trend": "Falling",
+    "history_14d": [
+      96.5,
+      0.0,
+      115.6,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      115.5,
+      124.7,
+      78.3,
+      145.9,
+      103.3,
+      66.2,
+      165.3
+    ],
+    "forecast_3day": [
+      {
+        "frp": 74.1,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 100.4,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 95.3,
+        "active_probability": 91.8
+      }
+    ]
+  },
+  "FE-1049": {
+    "predicted_frp_next": 95.5,
+    "recurrence_probability": 92.3,
+    "trend": "Stable",
+    "history_14d": [
+      117.7,
+      3.0,
+      0.0,
+      93.7,
+      0.0,
+      73.6,
+      0.0,
+      123.8,
+      105.9,
+      79.6,
+      0.0,
+      113.8,
+      67.1,
+      123.4
+    ],
+    "forecast_3day": [
+      {
+        "frp": 95.5,
+        "active_probability": 92.3
+      },
+      {
+        "frp": 95.8,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 99.6,
+        "active_probability": 91.9
+      }
+    ]
+  },
+  "FE-1050": {
+    "predicted_frp_next": 100.3,
+    "recurrence_probability": 91.4,
+    "trend": "Stable",
+    "history_14d": [
+      38.6,
+      81.5,
+      80.3,
+      119.0,
+      0.0,
+      141.2,
+      0.0,
+      46.7,
+      97.2,
+      57.1,
+      148.1,
+      51.8,
+      194.5,
+      112.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 100.3,
+        "active_probability": 91.4
+      },
+      {
+        "frp": 95.5,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 92.1,
+        "active_probability": 91.7
+      }
+    ]
+  },
+  "FE-1051": {
+    "predicted_frp_next": 91.0,
+    "recurrence_probability": 91.6,
+    "trend": "Rising",
+    "history_14d": [
+      84.7,
+      133.4,
+      37.4,
+      98.8,
+      131.7,
+      134.2,
+      105.9,
+      93.5,
+      0.0,
+      149.6,
+      83.3,
+      108.9,
+      0.0,
+      110.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 91.0,
+        "active_probability": 91.6
+      },
+      {
+        "frp": 89.0,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 85.7,
+        "active_probability": 92.2
+      }
+    ]
+  },
+  "FE-1052": {
+    "predicted_frp_next": 84.1,
+    "recurrence_probability": 92.8,
+    "trend": "Falling",
+    "history_14d": [
+      106.9,
+      128.5,
+      114.7,
+      93.9,
+      113.7,
+      44.6,
+      25.0,
+      73.2,
+      153.2,
+      183.0,
+      158.6,
+      0.0,
+      143.9,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 84.1,
+        "active_probability": 92.8
+      },
+      {
+        "frp": 92.5,
+        "active_probability": 91.5
+      },
+      {
+        "frp": 92.8,
+        "active_probability": 93.3
+      }
+    ]
+  },
+  "FE-1053": {
+    "predicted_frp_next": 96.1,
+    "recurrence_probability": 92.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      160.1,
+      93.0,
+      136.4,
+      0.0,
+      108.5,
+      79.8,
+      127.3,
+      78.2,
+      151.2,
+      115.0,
+      120.0,
+      118.6,
+      74.3
+    ],
+    "forecast_3day": [
+      {
+        "frp": 96.1,
+        "active_probability": 92.5
+      },
+      {
+        "frp": 100.7,
+        "active_probability": 92.5
+      },
+      {
+        "frp": 99.6,
+        "active_probability": 92.4
+      }
+    ]
+  },
+  "FE-1054": {
+    "predicted_frp_next": 90.6,
+    "recurrence_probability": 91.8,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      126.6,
+      79.3,
+      75.1,
+      68.9,
+      181.2,
+      57.8,
+      128.8,
+      0.0,
+      87.0,
+      106.5,
+      66.7,
+      155.6
+    ],
+    "forecast_3day": [
+      {
+        "frp": 90.6,
+        "active_probability": 91.8
+      },
+      {
+        "frp": 97.5,
+        "active_probability": 91.9
+      },
+      {
+        "frp": 96.4,
+        "active_probability": 91.9
+      }
+    ]
+  },
+  "FE-1055": {
+    "predicted_frp_next": 87.1,
+    "recurrence_probability": 92.3,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      15.9,
+      96.6,
+      70.3,
+      64.1,
+      104.3,
+      166.6,
+      126.1,
+      141.2,
+      99.8,
+      66.1,
+      138.2,
+      157.8,
+      144.8
+    ],
+    "forecast_3day": [
+      {
+        "frp": 87.1,
+        "active_probability": 92.3
+      },
+      {
+        "frp": 95.5,
+        "active_probability": 91.5
+      },
+      {
+        "frp": 98.7,
+        "active_probability": 92.5
+      }
+    ]
+  },
+  "FE-1056": {
+    "predicted_frp_next": 76.3,
+    "recurrence_probability": 86.9,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      77.8,
+      10.4,
+      110.2,
+      76.1,
+      90.3,
+      147.0,
+      35.0,
+      103.9,
+      0.0,
+      96.9,
+      0.0,
+      187.6,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 76.3,
+        "active_probability": 86.9
+      },
+      {
+        "frp": 80.8,
+        "active_probability": 86.7
+      },
+      {
+        "frp": 85.4,
+        "active_probability": 86.2
+      }
+    ]
+  },
+  "FE-1057": {
+    "predicted_frp_next": 98.9,
+    "recurrence_probability": 92.7,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      118.0,
+      124.2,
+      91.3,
+      108.3,
+      150.9,
+      21.5,
+      69.1,
+      50.0,
+      148.4,
+      118.3,
+      0.0,
+      103.1,
+      32.2
+    ],
+    "forecast_3day": [
+      {
+        "frp": 98.9,
+        "active_probability": 92.7
+      },
+      {
+        "frp": 99.2,
+        "active_probability": 91.9
+      },
+      {
+        "frp": 97.2,
+        "active_probability": 92.9
+      }
+    ]
+  },
+  "FE-1058": {
+    "predicted_frp_next": 100.5,
+    "recurrence_probability": 92.3,
+    "trend": "Stable",
+    "history_14d": [
+      52.1,
+      69.6,
+      23.9,
+      71.1,
+      0.0,
+      81.6,
+      131.7,
+      170.5,
+      64.3,
+      147.6,
+      111.0,
+      96.5,
+      74.2,
+      18.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 100.5,
+        "active_probability": 92.3
+      },
+      {
+        "frp": 95.2,
+        "active_probability": 91.9
+      },
+      {
+        "frp": 95.5,
+        "active_probability": 92.3
+      }
+    ]
+  },
+  "FE-1059": {
+    "predicted_frp_next": 82.4,
+    "recurrence_probability": 92.3,
+    "trend": "Falling",
+    "history_14d": [
+      139.3,
+      83.4,
+      99.3,
+      86.3,
+      118.8,
+      91.9,
+      40.5,
+      203.8,
+      23.0,
+      161.5,
+      70.4,
+      111.8,
+      95.5,
+      167.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 82.4,
+        "active_probability": 92.3
+      },
+      {
+        "frp": 97.1,
+        "active_probability": 92.3
+      },
+      {
+        "frp": 98.5,
+        "active_probability": 92.1
+      }
+    ]
+  },
+  "FE-1060": {
+    "predicted_frp_next": 78.6,
+    "recurrence_probability": 92.0,
+    "trend": "Rising",
+    "history_14d": [
+      153.2,
+      168.7,
+      134.4,
+      158.6,
+      130.7,
+      192.9,
+      135.7,
+      0.0,
+      53.0,
+      89.2,
+      110.1,
+      97.8,
+      31.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 78.6,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 77.1,
+        "active_probability": 91.0
+      },
+      {
+        "frp": 75.8,
+        "active_probability": 90.3
+      }
+    ]
+  },
+  "FE-1061": {
+    "predicted_frp_next": 109.7,
+    "recurrence_probability": 38.8,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 109.7,
+        "active_probability": 38.8
+      },
+      {
+        "frp": 81.8,
+        "active_probability": 50.4
+      },
+      {
+        "frp": 83.9,
+        "active_probability": 47.9
+      }
+    ]
+  },
+  "FE-1062": {
+    "predicted_frp_next": 74.7,
+    "recurrence_probability": 91.3,
+    "trend": "Rising",
+    "history_14d": [
+      123.6,
+      200.3,
+      143.3,
+      130.9,
+      71.5,
+      51.6,
+      19.2,
+      0.0,
+      3.0,
+      129.5,
+      0.0,
+      107.6,
+      20.2,
+      128.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 74.7,
+        "active_probability": 91.3
+      },
+      {
+        "frp": 72.6,
+        "active_probability": 90.9
+      },
+      {
+        "frp": 74.1,
+        "active_probability": 91.3
+      }
+    ]
+  },
+  "FE-1063": {
+    "predicted_frp_next": 75.6,
+    "recurrence_probability": 88.8,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      51.2,
+      3.0,
+      0.0,
+      0.0,
+      24.8,
+      10.7,
+      46.2,
+      190.2,
+      158.6,
+      0.0,
+      0.0,
+      0.0,
+      59.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 75.6,
+        "active_probability": 88.8
+      },
+      {
+        "frp": 71.5,
+        "active_probability": 85.9
+      },
+      {
+        "frp": 71.9,
+        "active_probability": 87.7
+      }
+    ]
+  },
+  "FE-1064": {
+    "predicted_frp_next": 71.3,
+    "recurrence_probability": 90.5,
+    "trend": "Stable",
+    "history_14d": [
+      145.1,
+      81.8,
+      128.1,
+      130.0,
+      124.2,
+      126.3,
+      92.3,
+      23.9,
+      42.6,
+      155.4,
+      93.7,
+      115.3,
+      0.0,
+      139.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 71.3,
+        "active_probability": 90.5
+      },
+      {
+        "frp": 76.8,
+        "active_probability": 91.0
+      },
+      {
+        "frp": 82.9,
+        "active_probability": 91.2
+      }
+    ]
+  },
+  "FE-1065": {
+    "predicted_frp_next": 56.0,
+    "recurrence_probability": 82.0,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      63.6,
+      0.0,
+      96.5,
+      88.5,
+      0.0,
+      0.0,
+      0.0,
+      108.0,
+      50.6,
+      0.0,
+      82.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 56.0,
+        "active_probability": 82.0
+      },
+      {
+        "frp": 58.1,
+        "active_probability": 82.0
+      },
+      {
+        "frp": 57.6,
+        "active_probability": 81.8
+      }
+    ]
+  },
+  "FE-1066": {
+    "predicted_frp_next": 74.2,
+    "recurrence_probability": 90.9,
+    "trend": "Rising",
+    "history_14d": [
+      163.0,
+      110.3,
+      55.6,
+      62.9,
+      39.7,
+      82.9,
+      95.5,
+      3.0,
+      0.0,
+      131.0,
+      89.6,
+      46.0,
+      12.0,
+      33.1
+    ],
+    "forecast_3day": [
+      {
+        "frp": 74.2,
+        "active_probability": 90.9
+      },
+      {
+        "frp": 71.0,
+        "active_probability": 90.1
+      },
+      {
+        "frp": 72.0,
+        "active_probability": 90.2
+      }
+    ]
+  },
+  "FE-1067": {
+    "predicted_frp_next": 57.2,
+    "recurrence_probability": 83.1,
+    "trend": "Rising",
+    "history_14d": [
+      3.0,
+      49.5,
+      0.0,
+      0.0,
+      73.6,
+      0.0,
+      122.0,
+      54.1,
+      151.2,
+      0.0,
+      101.2,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 57.2,
+        "active_probability": 83.1
+      },
+      {
+        "frp": 60.8,
+        "active_probability": 79.6
+      },
+      {
+        "frp": 58.9,
+        "active_probability": 79.8
+      }
+    ]
+  },
+  "FE-1068": {
+    "predicted_frp_next": 73.6,
+    "recurrence_probability": 91.5,
+    "trend": "Stable",
+    "history_14d": [
+      68.3,
+      82.0,
+      232.2,
+      149.8,
+      3.0,
+      26.5,
+      75.8,
+      126.3,
+      133.5,
+      0.0,
+      134.5,
+      126.5,
+      0.0,
+      73.5
+    ],
+    "forecast_3day": [
+      {
+        "frp": 73.6,
+        "active_probability": 91.5
+      },
+      {
+        "frp": 73.8,
+        "active_probability": 91.3
+      },
+      {
+        "frp": 72.3,
+        "active_probability": 91.3
+      }
+    ]
+  },
+  "FE-1069": {
+    "predicted_frp_next": 61.9,
+    "recurrence_probability": 83.7,
+    "trend": "Stable",
+    "history_14d": [
+      77.9,
+      151.8,
+      0.0,
+      90.5,
+      0.0,
+      43.7,
+      78.3,
+      100.1,
+      0.0,
+      28.6,
+      182.0,
+      137.6,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 61.9,
+        "active_probability": 83.7
+      },
+      {
+        "frp": 56.4,
+        "active_probability": 83.9
+      },
+      {
+        "frp": 57.7,
+        "active_probability": 80.2
+      }
+    ]
+  },
+  "FE-1070": {
+    "predicted_frp_next": 65.5,
+    "recurrence_probability": 90.4,
+    "trend": "Falling",
+    "history_14d": [
+      69.9,
+      119.4,
+      223.9,
+      3.0,
+      76.3,
+      110.1,
+      3.0,
+      95.3,
+      121.8,
+      112.1,
+      179.7,
+      126.7,
+      190.4,
+      5.3
+    ],
+    "forecast_3day": [
+      {
+        "frp": 65.5,
+        "active_probability": 90.4
+      },
+      {
+        "frp": 72.5,
+        "active_probability": 91.3
+      },
+      {
+        "frp": 76.2,
+        "active_probability": 91.5
+      }
+    ]
+  },
+  "FE-1071": {
+    "predicted_frp_next": 73.4,
+    "recurrence_probability": 90.8,
+    "trend": "Stable",
+    "history_14d": [
+      82.4,
+      91.2,
+      56.0,
+      30.9,
+      67.1,
+      118.1,
+      159.2,
+      75.0,
+      117.8,
+      31.6,
+      135.8,
+      118.2,
+      0.0,
+      10.4
+    ],
+    "forecast_3day": [
+      {
+        "frp": 73.4,
+        "active_probability": 90.8
+      },
+      {
+        "frp": 76.0,
+        "active_probability": 90.8
+      },
+      {
+        "frp": 71.1,
+        "active_probability": 90.0
+      }
+    ]
+  },
+  "FE-1072": {
+    "predicted_frp_next": 74.9,
+    "recurrence_probability": 91.6,
+    "trend": "Rising",
+    "history_14d": [
+      189.1,
+      203.9,
+      178.7,
+      0.0,
+      59.5,
+      0.0,
+      79.1,
+      111.2,
+      85.1,
+      54.3,
+      0.0,
+      22.4,
+      117.6,
+      59.6
+    ],
+    "forecast_3day": [
+      {
+        "frp": 74.9,
+        "active_probability": 91.6
+      },
+      {
+        "frp": 76.1,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 74.3,
+        "active_probability": 92.3
+      }
+    ]
+  },
+  "FE-1073": {
+    "predicted_frp_next": 73.7,
+    "recurrence_probability": 90.5,
+    "trend": "Falling",
+    "history_14d": [
+      153.1,
+      165.0,
+      0.0,
+      141.9,
+      0.0,
+      0.0,
+      47.0,
+      90.0,
+      64.8,
+      67.2,
+      116.5,
+      99.9,
+      108.6,
+      100.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 73.7,
+        "active_probability": 90.5
+      },
+      {
+        "frp": 74.0,
+        "active_probability": 90.7
+      },
+      {
+        "frp": 73.1,
+        "active_probability": 90.7
+      }
+    ]
+  },
+  "FE-1074": {
+    "predicted_frp_next": 64.0,
+    "recurrence_probability": 92.0,
+    "trend": "Falling",
+    "history_14d": [
+      82.7,
+      58.4,
+      41.5,
+      168.1,
+      0.0,
+      155.9,
+      117.2,
+      51.7,
+      75.0,
+      192.3,
+      91.9,
+      37.9,
+      192.9,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 64.0,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 73.2,
+        "active_probability": 91.1
+      },
+      {
+        "frp": 73.0,
+        "active_probability": 92.4
+      }
+    ]
+  },
+  "FE-1075": {
+    "predicted_frp_next": 73.5,
+    "recurrence_probability": 92.4,
+    "trend": "Stable",
+    "history_14d": [
+      113.4,
+      0.0,
+      81.5,
+      0.0,
+      3.0,
+      15.5,
+      122.9,
+      85.3,
+      8.2,
+      152.7,
+      0.0,
+      194.2,
+      130.6,
+      3.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 73.5,
+        "active_probability": 92.4
+      },
+      {
+        "frp": 75.4,
+        "active_probability": 92.5
+      },
+      {
+        "frp": 72.1,
+        "active_probability": 92.3
+      }
+    ]
+  },
+  "FE-1076": {
+    "predicted_frp_next": 59.9,
+    "recurrence_probability": 82.6,
+    "trend": "Rising",
+    "history_14d": [
+      172.2,
+      0.0,
+      0.0,
+      113.2,
+      74.0,
+      130.2,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      17.4,
+      49.7,
+      123.5,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 59.9,
+        "active_probability": 82.6
+      },
+      {
+        "frp": 56.8,
+        "active_probability": 82.7
+      },
+      {
+        "frp": 57.6,
+        "active_probability": 80.2
+      }
+    ]
+  },
+  "FE-1077": {
+    "predicted_frp_next": 75.1,
+    "recurrence_probability": 91.7,
+    "trend": "Stable",
+    "history_14d": [
+      104.8,
+      62.0,
+      130.4,
+      29.7,
+      80.2,
+      25.6,
+      37.2,
+      56.3,
+      166.5,
+      0.0,
+      189.4,
+      113.3,
+      3.0,
+      72.6
+    ],
+    "forecast_3day": [
+      {
+        "frp": 75.1,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 75.2,
+        "active_probability": 91.2
+      },
+      {
+        "frp": 76.4,
+        "active_probability": 91.2
+      }
+    ]
+  },
+  "FE-1078": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 3.6,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 3.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 3.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 3.6
+      }
+    ]
+  },
+  "FE-1079": {
+    "predicted_frp_next": 71.9,
+    "recurrence_probability": 84.5,
+    "trend": "Rising",
+    "history_14d": [
+      90.1,
+      14.6,
+      3.0,
+      148.3,
+      91.8,
+      8.9,
+      98.2,
+      0.0,
+      114.6,
+      0.0,
+      128.6,
+      55.8,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 71.9,
+        "active_probability": 84.5
+      },
+      {
+        "frp": 66.2,
+        "active_probability": 81.9
+      },
+      {
+        "frp": 65.9,
+        "active_probability": 80.3
+      }
+    ]
+  },
+  "FE-1080": {
+    "predicted_frp_next": 78.8,
+    "recurrence_probability": 90.4,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      123.9,
+      45.8,
+      103.3,
+      127.3,
+      0.0,
+      0.0,
+      13.0,
+      66.9,
+      78.5,
+      0.0,
+      82.5,
+      85.3,
+      3.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 78.8,
+        "active_probability": 90.4
+      },
+      {
+        "frp": 77.2,
+        "active_probability": 91.2
+      },
+      {
+        "frp": 78.0,
+        "active_probability": 91.0
+      }
+    ]
+  },
+  "FE-1081": {
+    "predicted_frp_next": 73.5,
+    "recurrence_probability": 90.1,
+    "trend": "Stable",
+    "history_14d": [
+      114.8,
+      0.0,
+      37.0,
+      62.1,
+      157.9,
+      100.2,
+      126.6,
+      171.8,
+      40.0,
+      0.0,
+      94.6,
+      54.1,
+      0.0,
+      182.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 73.5,
+        "active_probability": 90.1
+      },
+      {
+        "frp": 72.3,
+        "active_probability": 90.6
+      },
+      {
+        "frp": 75.4,
+        "active_probability": 90.5
+      }
+    ]
+  },
+  "FE-1082": {
+    "predicted_frp_next": 63.5,
+    "recurrence_probability": 88.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      196.6,
+      3.0,
+      64.1,
+      26.8,
+      0.0,
+      91.6,
+      26.1,
+      92.1,
+      0.0,
+      0.0,
+      206.4,
+      27.8
+    ],
+    "forecast_3day": [
+      {
+        "frp": 63.5,
+        "active_probability": 88.5
+      },
+      {
+        "frp": 69.6,
+        "active_probability": 88.4
+      },
+      {
+        "frp": 65.7,
+        "active_probability": 89.8
+      }
+    ]
+  },
+  "FE-1083": {
+    "predicted_frp_next": 71.8,
+    "recurrence_probability": 90.4,
+    "trend": "Rising",
+    "history_14d": [
+      97.9,
+      50.8,
+      0.0,
+      0.0,
+      105.3,
+      0.0,
+      3.0,
+      49.1,
+      135.4,
+      104.0,
+      47.2,
+      35.2,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 71.8,
+        "active_probability": 90.4
+      },
+      {
+        "frp": 74.3,
+        "active_probability": 86.9
+      },
+      {
+        "frp": 69.7,
+        "active_probability": 88.3
+      }
+    ]
+  },
+  "FE-1084": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 5.6,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 5.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 5.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 5.6
+      }
+    ]
+  },
+  "FE-1085": {
+    "predicted_frp_next": 0.2,
+    "recurrence_probability": 4.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.2,
+        "active_probability": 4.5
+      },
+      {
+        "frp": 0.2,
+        "active_probability": 4.5
+      },
+      {
+        "frp": 0.2,
+        "active_probability": 4.5
+      }
+    ]
+  },
+  "FE-1086": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1087": {
+    "predicted_frp_next": 43.0,
+    "recurrence_probability": 5.0,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 43.0,
+        "active_probability": 5.0
+      },
+      {
+        "frp": 60.6,
+        "active_probability": 28.1
+      },
+      {
+        "frp": 61.7,
+        "active_probability": 32.8
+      }
+    ]
+  },
+  "FE-1088": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      }
+    ]
+  },
+  "FE-1089": {
+    "predicted_frp_next": 12.8,
+    "recurrence_probability": 4.1,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 12.8,
+        "active_probability": 4.1
+      },
+      {
+        "frp": 23.8,
+        "active_probability": 23.1
+      },
+      {
+        "frp": 51.1,
+        "active_probability": 32.6
+      }
+    ]
+  },
+  "FE-1090": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.8,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.8
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.8
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.8
+      }
+    ]
+  },
+  "FE-1091": {
+    "predicted_frp_next": 12.0,
+    "recurrence_probability": 3.7,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 12.0,
+        "active_probability": 3.7
+      },
+      {
+        "frp": 23.1,
+        "active_probability": 23.0
+      },
+      {
+        "frp": 51.1,
+        "active_probability": 32.9
+      }
+    ]
+  },
+  "FE-1092": {
+    "predicted_frp_next": 6.1,
+    "recurrence_probability": 3.2,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 6.1,
+        "active_probability": 3.2
+      },
+      {
+        "frp": 13.7,
+        "active_probability": 17.3
+      },
+      {
+        "frp": 30.9,
+        "active_probability": 24.7
+      }
+    ]
+  },
+  "FE-1093": {
+    "predicted_frp_next": 8.7,
+    "recurrence_probability": 3.7,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 8.7,
+        "active_probability": 3.7
+      },
+      {
+        "frp": 19.9,
+        "active_probability": 22.0
+      },
+      {
+        "frp": 49.2,
+        "active_probability": 30.7
+      }
+    ]
+  },
+  "FE-1094": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1095": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1096": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1097": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.6,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.6
+      }
+    ]
+  },
+  "FE-1098": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1099": {
+    "predicted_frp_next": 109.2,
+    "recurrence_probability": 15.0,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 109.2,
+        "active_probability": 15.0
+      },
+      {
+        "frp": 84.9,
+        "active_probability": 35.5
+      },
+      {
+        "frp": 88.8,
+        "active_probability": 36.1
+      }
+    ]
+  },
+  "FE-1100": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1101": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1102": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1103": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.8,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.8
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.8
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.8
+      }
+    ]
+  },
+  "FE-1104": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1105": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1106": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1107": {
+    "predicted_frp_next": 31.5,
+    "recurrence_probability": 4.3,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 31.5,
+        "active_probability": 4.3
+      },
+      {
+        "frp": 56.2,
+        "active_probability": 28.4
+      },
+      {
+        "frp": 58.7,
+        "active_probability": 32.7
+      }
+    ]
+  },
+  "FE-1108": {
+    "predicted_frp_next": 2.4,
+    "recurrence_probability": 10.4,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      118.2,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 2.4,
+        "active_probability": 10.4
+      },
+      {
+        "frp": 12.3,
+        "active_probability": 22.2
+      },
+      {
+        "frp": 14.6,
+        "active_probability": 21.4
+      }
+    ]
+  },
+  "FE-1109": {
+    "predicted_frp_next": 2.5,
+    "recurrence_probability": 4.8,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 2.5,
+        "active_probability": 4.8
+      },
+      {
+        "frp": 7.6,
+        "active_probability": 13.8
+      },
+      {
+        "frp": 12.5,
+        "active_probability": 16.1
+      }
+    ]
+  },
+  "FE-1110": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1111": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1112": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1113": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1114": {
+    "predicted_frp_next": 0.1,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.1,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1115": {
+    "predicted_frp_next": 0.2,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.2,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.2,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.2,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1116": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1117": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1118": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1119": {
+    "predicted_frp_next": 0.1,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.1,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1120": {
+    "predicted_frp_next": 0.2,
+    "recurrence_probability": 0.6,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.2,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.2,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.2,
+        "active_probability": 0.6
+      }
+    ]
+  },
+  "FE-1121": {
+    "predicted_frp_next": 6.4,
+    "recurrence_probability": 7.1,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      124.2,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 6.4,
+        "active_probability": 7.1
+      },
+      {
+        "frp": 14.6,
+        "active_probability": 17.5
+      },
+      {
+        "frp": 30.3,
+        "active_probability": 21.8
+      }
+    ]
+  },
+  "FE-1122": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1123": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1124": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      }
+    ]
+  },
+  "FE-1125": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1126": {
+    "predicted_frp_next": 0.4,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.4,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.4,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.9,
+        "active_probability": 2.5
+      }
+    ]
+  },
+  "FE-1127": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      }
+    ]
+  },
+  "FE-1128": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1129": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1130": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1131": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1132": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1133": {
+    "predicted_frp_next": 6.7,
+    "recurrence_probability": 26.7,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      85.2,
+      0.0,
+      50.0,
+      0.0,
+      103.9
+    ],
+    "forecast_3day": [
+      {
+        "frp": 6.7,
+        "active_probability": 26.7
+      },
+      {
+        "frp": 1.4,
+        "active_probability": 22.7
+      },
+      {
+        "frp": 7.0,
+        "active_probability": 17.1
+      }
+    ]
+  },
+  "FE-1134": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1135": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1136": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.9,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.9
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.9
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.9
+      }
+    ]
+  },
+  "FE-1137": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1138": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1139": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1140": {
+    "predicted_frp_next": 0.3,
+    "recurrence_probability": 0.6,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.3,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.6
+      }
+    ]
+  },
+  "FE-1141": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1142": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1143": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1144": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1145": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1146": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.4,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.4
+      }
+    ]
+  },
+  "FE-1147": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1148": {
+    "predicted_frp_next": 0.1,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.1,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.1,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1149": {
+    "predicted_frp_next": 0.7,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.7,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.7,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 1.2,
+        "active_probability": 1.6
+      }
+    ]
+  },
+  "FE-1150": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1151": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.1,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.1
+      }
+    ]
+  },
+  "FE-1152": {
+    "predicted_frp_next": 0.3,
+    "recurrence_probability": 0.6,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.3,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.6
+      },
+      {
+        "frp": 0.3,
+        "active_probability": 0.6
+      }
+    ]
+  },
+  "FE-1153": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.2,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.2
+      }
+    ]
+  },
+  "FE-1154": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.5,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.5
+      }
+    ]
+  },
+  "FE-1155": {
+    "predicted_frp_next": 0.0,
+    "recurrence_probability": 0.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      },
+      {
+        "frp": 0.0,
+        "active_probability": 0.3
+      }
+    ]
+  },
+  "FE-1156": {
+    "predicted_frp_next": 63.5,
+    "recurrence_probability": 63.7,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      0.0,
+      27.6,
+      75.1,
+      0.0,
+      50.2,
+      161.5,
+      93.9,
+      212.9,
+      48.3,
+      41.8,
+      136.4,
+      86.6,
+      157.3
+    ],
+    "forecast_3day": [
+      {
+        "frp": 63.5,
+        "active_probability": 63.7
+      },
+      {
+        "frp": 62.1,
+        "active_probability": 61.8
+      },
+      {
+        "frp": 67.7,
+        "active_probability": 64.6
+      }
+    ]
+  },
+  "FE-1157": {
+    "predicted_frp_next": 92.2,
+    "recurrence_probability": 91.7,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      51.2,
+      64.7,
+      121.1,
+      84.1,
+      43.9,
+      165.4,
+      158.9,
+      161.3,
+      171.7,
+      153.9,
+      170.1,
+      45.6,
+      59.3
+    ],
+    "forecast_3day": [
+      {
+        "frp": 92.2,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 106.1,
+        "active_probability": 93.0
+      },
+      {
+        "frp": 95.7,
+        "active_probability": 93.0
+      }
+    ]
+  },
+  "FE-1158": {
+    "predicted_frp_next": 80.6,
+    "recurrence_probability": 92.1,
+    "trend": "Stable",
+    "history_14d": [
+      96.5,
+      161.8,
+      0.0,
+      12.2,
+      0.0,
+      96.3,
+      0.0,
+      136.2,
+      0.0,
+      0.0,
+      10.7,
+      143.2,
+      145.3,
+      106.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 80.6,
+        "active_probability": 92.1
+      },
+      {
+        "frp": 78.6,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 81.9,
+        "active_probability": 92.2
+      }
+    ]
+  },
+  "FE-1159": {
+    "predicted_frp_next": 90.9,
+    "recurrence_probability": 91.7,
+    "trend": "Rising",
+    "history_14d": [
+      125.5,
+      91.9,
+      90.3,
+      0.0,
+      0.0,
+      95.1,
+      98.7,
+      101.8,
+      98.5,
+      110.3,
+      119.2,
+      49.0,
+      0.0,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 90.9,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 98.0,
+        "active_probability": 89.3
+      },
+      {
+        "frp": 87.6,
+        "active_probability": 90.9
+      }
+    ]
+  },
+  "FE-1160": {
+    "predicted_frp_next": 102.7,
+    "recurrence_probability": 92.0,
+    "trend": "Stable",
+    "history_14d": [
+      121.4,
+      90.0,
+      3.0,
+      0.0,
+      105.7,
+      156.4,
+      0.0,
+      80.8,
+      98.0,
+      73.3,
+      146.0,
+      57.9,
+      152.8,
+      56.4
+    ],
+    "forecast_3day": [
+      {
+        "frp": 102.7,
+        "active_probability": 92.0
+      },
+      {
+        "frp": 98.4,
+        "active_probability": 91.4
+      },
+      {
+        "frp": 99.0,
+        "active_probability": 91.8
+      }
+    ]
+  },
+  "FE-1161": {
+    "predicted_frp_next": 89.2,
+    "recurrence_probability": 94.0,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      105.9,
+      57.5,
+      203.9,
+      0.0,
+      86.3,
+      72.9,
+      100.1,
+      134.3,
+      127.0,
+      105.7,
+      79.1,
+      42.1,
+      106.2
+    ],
+    "forecast_3day": [
+      {
+        "frp": 89.2,
+        "active_probability": 94.0
+      },
+      {
+        "frp": 87.7,
+        "active_probability": 93.8
+      },
+      {
+        "frp": 90.5,
+        "active_probability": 93.7
+      }
+    ]
+  },
+  "FE-1162": {
+    "predicted_frp_next": 93.2,
+    "recurrence_probability": 91.3,
+    "trend": "Rising",
+    "history_14d": [
+      86.4,
+      31.1,
+      63.7,
+      104.4,
+      84.9,
+      0.0,
+      0.0,
+      87.0,
+      92.2,
+      89.8,
+      0.0,
+      14.9,
+      76.3,
+      48.1
+    ],
+    "forecast_3day": [
+      {
+        "frp": 93.2,
+        "active_probability": 91.3
+      },
+      {
+        "frp": 96.9,
+        "active_probability": 91.0
+      },
+      {
+        "frp": 89.7,
+        "active_probability": 91.3
+      }
+    ]
+  },
+  "FE-1163": {
+    "predicted_frp_next": 85.9,
+    "recurrence_probability": 90.1,
+    "trend": "Falling",
+    "history_14d": [
+      127.0,
+      110.4,
+      126.1,
+      133.7,
+      67.5,
+      105.9,
+      0.0,
+      128.0,
+      162.8,
+      163.7,
+      128.9,
+      92.4,
+      119.9,
+      143.8
+    ],
+    "forecast_3day": [
+      {
+        "frp": 85.9,
+        "active_probability": 90.1
+      },
+      {
+        "frp": 97.3,
+        "active_probability": 91.3
+      },
+      {
+        "frp": 93.7,
+        "active_probability": 91.3
+      }
+    ]
+  },
+  "FE-1164": {
+    "predicted_frp_next": 95.8,
+    "recurrence_probability": 91.6,
+    "trend": "Stable",
+    "history_14d": [
+      90.6,
+      103.9,
+      16.6,
+      149.4,
+      143.3,
+      63.4,
+      0.0,
+      0.0,
+      77.3,
+      167.8,
+      139.7,
+      214.9,
+      78.2,
+      99.4
+    ],
+    "forecast_3day": [
+      {
+        "frp": 95.8,
+        "active_probability": 91.6
+      },
+      {
+        "frp": 90.9,
+        "active_probability": 91.8
+      },
+      {
+        "frp": 100.4,
+        "active_probability": 91.8
+      }
+    ]
+  },
+  "FE-1165": {
+    "predicted_frp_next": 101.4,
+    "recurrence_probability": 92.5,
+    "trend": "Stable",
+    "history_14d": [
+      45.0,
+      54.2,
+      146.1,
+      107.4,
+      64.9,
+      99.4,
+      111.7,
+      116.5,
+      145.1,
+      45.8,
+      0.0,
+      148.9,
+      113.4,
+      72.1
+    ],
+    "forecast_3day": [
+      {
+        "frp": 101.4,
+        "active_probability": 92.5
+      },
+      {
+        "frp": 97.0,
+        "active_probability": 92.1
+      },
+      {
+        "frp": 99.8,
+        "active_probability": 91.9
+      }
+    ]
+  },
+  "FE-1166": {
+    "predicted_frp_next": 64.3,
+    "recurrence_probability": 80.1,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      47.3,
+      0.0,
+      167.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      117.0,
+      126.9,
+      14.9
+    ],
+    "forecast_3day": [
+      {
+        "frp": 64.3,
+        "active_probability": 80.1
+      },
+      {
+        "frp": 60.0,
+        "active_probability": 79.8
+      },
+      {
+        "frp": 56.5,
+        "active_probability": 78.5
+      }
+    ]
+  },
+  "FE-1167": {
+    "predicted_frp_next": 89.5,
+    "recurrence_probability": 91.1,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      168.0,
+      89.6,
+      81.5,
+      171.7,
+      86.8,
+      135.2,
+      0.0,
+      138.1,
+      108.1,
+      0.0,
+      27.9
+    ],
+    "forecast_3day": [
+      {
+        "frp": 89.5,
+        "active_probability": 91.1
+      },
+      {
+        "frp": 93.7,
+        "active_probability": 91.4
+      },
+      {
+        "frp": 83.1,
+        "active_probability": 90.9
+      }
+    ]
+  },
+  "FE-1168": {
+    "predicted_frp_next": 70.1,
+    "recurrence_probability": 91.5,
+    "trend": "Falling",
+    "history_14d": [
+      63.3,
+      129.8,
+      64.6,
+      136.3,
+      119.4,
+      123.5,
+      0.0,
+      85.1,
+      0.0,
+      128.8,
+      179.5,
+      141.1,
+      88.6,
+      116.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 70.1,
+        "active_probability": 91.5
+      },
+      {
+        "frp": 79.1,
+        "active_probability": 91.5
+      },
+      {
+        "frp": 79.5,
+        "active_probability": 91.1
+      }
+    ]
+  },
+  "FE-1169": {
+    "predicted_frp_next": 97.9,
+    "recurrence_probability": 91.5,
+    "trend": "Rising",
+    "history_14d": [
+      96.1,
+      0.0,
+      160.7,
+      143.0,
+      0.0,
+      144.0,
+      0.0,
+      0.0,
+      95.7,
+      71.1,
+      126.3,
+      0.0,
+      34.0,
+      60.1
+    ],
+    "forecast_3day": [
+      {
+        "frp": 97.9,
+        "active_probability": 91.5
+      },
+      {
+        "frp": 85.6,
+        "active_probability": 90.8
+      },
+      {
+        "frp": 82.9,
+        "active_probability": 91.7
+      }
+    ]
+  },
+  "FE-1170": {
+    "predicted_frp_next": 103.1,
+    "recurrence_probability": 93.0,
+    "trend": "Stable",
+    "history_14d": [
+      82.6,
+      104.7,
+      133.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      71.8,
+      0.0,
+      112.4,
+      138.3,
+      120.1,
+      170.9,
+      72.8
+    ],
+    "forecast_3day": [
+      {
+        "frp": 103.1,
+        "active_probability": 93.0
+      },
+      {
+        "frp": 92.7,
+        "active_probability": 92.6
+      },
+      {
+        "frp": 102.6,
+        "active_probability": 93.4
+      }
+    ]
+  },
+  "FE-1171": {
+    "predicted_frp_next": 96.1,
+    "recurrence_probability": 92.9,
+    "trend": "Stable",
+    "history_14d": [
+      115.9,
+      136.8,
+      136.4,
+      52.5,
+      0.0,
+      119.2,
+      133.0,
+      112.7,
+      108.7,
+      0.0,
+      55.8,
+      109.5,
+      86.1,
+      115.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 96.1,
+        "active_probability": 92.9
+      },
+      {
+        "frp": 97.6,
+        "active_probability": 93.0
+      },
+      {
+        "frp": 97.8,
+        "active_probability": 93.0
+      }
+    ]
+  },
+  "FE-1172": {
+    "predicted_frp_next": 50.6,
+    "recurrence_probability": 78.3,
+    "trend": "Stable",
+    "history_14d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      71.3,
+      192.4,
+      0.0,
+      0.0,
+      117.3,
+      0.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 50.6,
+        "active_probability": 78.3
+      },
+      {
+        "frp": 51.9,
+        "active_probability": 76.7
+      },
+      {
+        "frp": 52.3,
+        "active_probability": 77.8
+      }
+    ]
+  },
+  "FE-1173": {
+    "predicted_frp_next": 91.4,
+    "recurrence_probability": 94.2,
+    "trend": "Stable",
+    "history_14d": [
+      44.8,
+      111.4,
+      0.0,
+      65.8,
+      80.4,
+      128.7,
+      0.0,
+      162.3,
+      0.0,
+      108.5,
+      51.8,
+      113.1,
+      125.6,
+      100.3
+    ],
+    "forecast_3day": [
+      {
+        "frp": 91.4,
+        "active_probability": 94.2
+      },
+      {
+        "frp": 88.6,
+        "active_probability": 94.2
+      },
+      {
+        "frp": 89.7,
+        "active_probability": 94.2
+      }
+    ]
+  },
+  "FE-1174": {
+    "predicted_frp_next": 60.9,
+    "recurrence_probability": 78.3,
+    "trend": "Rising",
+    "history_14d": [
+      0.0,
+      0.0,
+      145.7,
+      0.0,
+      0.0,
+      115.2,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      97.2,
+      0.0,
+      0.0,
+      79.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 60.9,
+        "active_probability": 78.3
+      },
+      {
+        "frp": 60.3,
+        "active_probability": 78.1
+      },
+      {
+        "frp": 58.8,
+        "active_probability": 76.4
+      }
+    ]
+  },
+  "FE-1175": {
+    "predicted_frp_next": 101.7,
+    "recurrence_probability": 92.9,
+    "trend": "Stable",
+    "history_14d": [
+      187.5,
+      146.9,
+      176.8,
+      125.1,
+      156.0,
+      0.0,
+      136.8,
+      0.0,
+      81.3,
+      146.3,
+      100.2,
+      157.3,
+      150.5,
+      52.0
+    ],
+    "forecast_3day": [
+      {
+        "frp": 101.7,
+        "active_probability": 92.9
+      },
+      {
+        "frp": 94.5,
+        "active_probability": 92.7
+      },
+      {
+        "frp": 101.4,
+        "active_probability": 93.0
+      }
+    ]
+  },
+  "FE-1176": {
+    "predicted_frp_next": 85.6,
+    "recurrence_probability": 93.5,
+    "trend": "Falling",
+    "history_14d": [
+      0.0,
+      133.7,
+      201.5,
+      0.0,
+      150.4,
+      0.0,
+      117.5,
+      16.2,
+      157.3,
+      129.6,
+      92.8,
+      67.6,
+      98.3,
+      178.8
+    ],
+    "forecast_3day": [
+      {
+        "frp": 85.6,
+        "active_probability": 93.5
+      },
+      {
+        "frp": 98.0,
+        "active_probability": 93.2
+      },
+      {
+        "frp": 94.4,
+        "active_probability": 93.2
+      }
+    ]
+  },
+  "FE-1177": {
+    "predicted_frp_next": 90.9,
+    "recurrence_probability": 91.7,
+    "trend": "Rising",
+    "history_14d": [
+      122.8,
+      0.0,
+      87.1,
+      0.0,
+      0.0,
+      134.9,
+      109.9,
+      0.0,
+      0.0,
+      101.0,
+      142.0,
+      102.4,
+      35.9,
+      103.7
+    ],
+    "forecast_3day": [
+      {
+        "frp": 90.9,
+        "active_probability": 91.7
+      },
+      {
+        "frp": 87.0,
+        "active_probability": 91.9
+      },
+      {
+        "frp": 86.0,
+        "active_probability": 91.8
+      }
+    ]
+  },
+  "FE-1178": {
+    "predicted_frp_next": 68.8,
+    "recurrence_probability": 86.7,
+    "trend": "Rising",
+    "history_14d": [
+      170.4,
+      134.8,
+      0.0,
+      100.8,
+      102.0,
+      48.6,
+      0.0,
+      141.2,
+      83.6,
+      107.0,
+      0.0,
+      0.0,
+      0.0,
+      85.4
+    ],
+    "forecast_3day": [
+      {
+        "frp": 68.8,
+        "active_probability": 86.7
+      },
+      {
+        "frp": 67.8,
+        "active_probability": 84.9
+      },
+      {
+        "frp": 69.6,
+        "active_probability": 86.5
+      }
+    ]
+  }
+}

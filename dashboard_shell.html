@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FlareEye — AI Thermal Event Classifier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+  :root{
+    --bg:#0a0d12; --panel:#10141b; --panel-2:#141a23; --raised:#1a212b;
+    --border:#232b37; --border-soft:#1c2430;
+    --text:#e8edf3; --text-dim:#8b96a6; --text-faint:#5b6575;
+    --cyan:#4fd1c5; --cyan-dim:#1f4a47;
+    --c-fire:#f94144; --c-flare:#f3722c; --c-wild:#f9c74f; --c-agri:#90be6d; --c-heat:#577590;
+    --risk-high:#f94144; --risk-med:#f3722c; --risk-low:#577590;
+    --ok:#7ee787; --bad:#f94144;
+    --mono:'IBM Plex Mono', monospace; --sans:'Space Grotesk', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); overflow:hidden; }
+  ::selection{ background:var(--cyan-dim); color:var(--text); }
+
+  .app{ display:grid; grid-template-rows:auto 1fr; height:100vh; }
+
+  header{ display:flex; align-items:center; justify-content:space-between; padding:12px 20px;
+    background:var(--panel); border-bottom:1px solid var(--border); z-index:20; }
+  .brand{ display:flex; align-items:center; gap:10px; }
+  .brand-mark{ width:30px; height:30px; border-radius:8px;
+    background:radial-gradient(circle at 32% 30%, #ffd166, var(--c-flare) 45%, var(--c-fire) 85%);
+    box-shadow:0 0 18px -2px rgba(249,65,68,.55); flex-shrink:0; }
+  .brand-text{ display:flex; flex-direction:column; line-height:1.1; }
+  .brand-text b{ font-size:17px; font-weight:700; letter-spacing:.2px; }
+  .brand-text span{ font-size:11px; color:var(--text-dim); font-family:var(--mono); }
+  .header-stats{ display:flex; gap:22px; }
+  .hstat{ display:flex; flex-direction:column; align-items:flex-end; gap:2px; }
+  .hstat b{ font-family:var(--mono); font-size:15px; }
+  .hstat span{ font-size:10.5px; color:var(--text-dim); }
+  .hstat.high b{ color:var(--risk-high); }
+  .hstat.model b{ color:var(--cyan); }
+  .live-pill{ display:flex; align-items:center; gap:7px; font-family:var(--mono); font-size:11px;
+    color:var(--text-dim); border:1px solid var(--border); padding:6px 11px; border-radius:20px; }
+  .live-dot{ width:7px; height:7px; border-radius:50%; background:var(--cyan);
+    box-shadow:0 0 0 0 rgba(79,209,197,.6); animation:pulse 2s infinite; }
+  @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(79,209,197,.55);} 70%{box-shadow:0 0 0 7px rgba(79,209,197,0);} 100%{box-shadow:0 0 0 0 rgba(79,209,197,0);} }
+
+  .layout{ display:grid; grid-template-columns:250px 1fr 380px; height:100%; min-height:0; }
+
+  .sidebar{ background:var(--panel); border-right:1px solid var(--border); padding:18px 16px 16px; overflow-y:auto; }
+  .side-block{ margin-bottom:26px; }
+  .side-title{ font-size:11px; color:var(--text-faint); font-family:var(--mono); margin-bottom:10px; letter-spacing:.3px; }
+  .search-box{ width:100%; background:var(--panel-2); border:1px solid var(--border); border-radius:8px;
+    padding:9px 11px; color:var(--text); font-family:var(--sans); font-size:13px; outline:none; }
+  .search-box::placeholder{ color:var(--text-faint); }
+  .search-box:focus{ border-color:var(--cyan); }
+  .cat-row{ display:flex; align-items:center; gap:9px; padding:7px 6px; border-radius:7px; cursor:pointer; user-select:none; font-size:13px; }
+  .cat-row:hover{ background:var(--panel-2); }
+  .cat-dot{ width:10px; height:10px; border-radius:50%; flex-shrink:0; }
+  .cat-row span.name{ flex:1; }
+  .cat-row span.count{ font-family:var(--mono); font-size:11.5px; color:var(--text-dim); }
+  .cat-row input{ accent-color:var(--cyan); width:14px; height:14px; }
+  .risk-row{ display:flex; gap:6px; }
+  .risk-btn{ flex:1; background:var(--panel-2); border:1px solid var(--border); color:var(--text-dim);
+    font-family:var(--mono); font-size:11px; padding:7px 4px; border-radius:7px; cursor:pointer; text-align:center; }
+  .risk-btn.active[data-risk="High"]{ border-color:var(--risk-high); color:var(--risk-high); background:rgba(249,65,68,.08); }
+  .risk-btn.active[data-risk="Medium"]{ border-color:var(--risk-med); color:var(--risk-med); background:rgba(243,114,44,.08); }
+  .risk-btn.active[data-risk="Low"]{ border-color:var(--risk-low); color:var(--risk-low); background:rgba(87,117,144,.1); }
+  .slider-label{ display:flex; justify-content:space-between; font-size:11.5px; color:var(--text-dim); margin-bottom:8px; }
+  .slider-label b{ color:var(--text); font-family:var(--mono); }
+  input[type="range"]{ width:100%; accent-color:var(--cyan); cursor:pointer; }
+  .reset-btn{ width:100%; background:none; border:1px solid var(--border); color:var(--text-dim);
+    font-family:var(--sans); font-size:12.5px; padding:8px; border-radius:7px; cursor:pointer; margin-top:4px; }
+  .reset-btn:hover{ border-color:var(--text-dim); color:var(--text); }
+
+  .map-wrap{ position:relative; min-width:0; }
+  #map{ height:100%; width:100%; background:#0d1117; }
+  .leaflet-container{ font-family:var(--sans); }
+  .legend{ position:absolute; left:14px; bottom:14px; z-index:500; background:rgba(16,20,27,.92);
+    border:1px solid var(--border); border-radius:10px; padding:12px 14px; backdrop-filter:blur(4px);
+    font-size:11.5px; color:var(--text-dim); }
+  .legend b{ display:block; color:var(--text); font-size:11px; margin-bottom:8px; font-family:var(--mono); }
+  .legend-row{ display:flex; align-items:center; gap:8px; margin-bottom:5px; }
+  .legend-row:last-child{ margin-bottom:0; }
+  .legend-dot{ width:9px; height:9px; border-radius:50%; }
+  .legend-size-note{ margin-top:9px; padding-top:9px; border-top:1px solid var(--border-soft); font-size:10.5px; }
+  .map-toast{ position:absolute; top:14px; left:50%; transform:translateX(-50%); background:rgba(16,20,27,.92);
+    border:1px solid var(--border); z-index:500; padding:7px 14px; border-radius:20px; font-size:11.5px;
+    color:var(--text-dim); font-family:var(--mono); pointer-events:none; }
+  .basemap-toggle{ position:absolute; top:14px; right:14px; z-index:500; display:flex;
+    background:rgba(16,20,27,.92); border:1px solid var(--border); border-radius:9px; padding:3px;
+    backdrop-filter:blur(4px); gap:2px; }
+  .basemap-btn{ font-family:var(--mono); font-size:11px; color:var(--text-dim); padding:6px 11px;
+    border-radius:6px; cursor:pointer; user-select:none; white-space:nowrap; }
+  .basemap-btn:hover{ color:var(--text); }
+  .basemap-btn.active{ background:var(--cyan-dim); color:var(--cyan); }
+  .map-attribution{ position:absolute; bottom:14px; right:14px; z-index:500; font-size:9.5px;
+    color:var(--text-faint); background:rgba(16,20,27,.75); padding:3px 8px; border-radius:5px;
+    font-family:var(--mono); pointer-events:none; }
+  .thermal-marker{ border-radius:50%; border:1.5px solid rgba(255,255,255,.55); }
+  .leaflet-popup-content-wrapper{ background:var(--panel-2); color:var(--text); border-radius:10px; border:1px solid var(--border); }
+  .leaflet-popup-tip{ background:var(--panel-2); }
+  .popup-title{ font-weight:600; font-size:13.5px; margin-bottom:3px; }
+  .popup-sub{ font-size:11px; color:var(--text-dim); font-family:var(--mono); }
+
+  .rpanel{ background:var(--panel); border-left:1px solid var(--border); display:flex; flex-direction:column; min-height:0; }
+  .rtabs{ display:flex; border-bottom:1px solid var(--border); flex-shrink:0; }
+  .rtab{ flex:1; text-align:center; padding:12px 0; font-size:12px; cursor:pointer; color:var(--text-dim);
+    border-bottom:2px solid transparent; font-family:var(--sans); }
+  .rtab.active{ color:var(--text); border-bottom-color:var(--cyan); }
+
+  .feed{ overflow-y:auto; padding:12px; flex:1; }
+  .event-card{ background:var(--panel-2); border:1px solid var(--border); border-radius:9px; padding:11px 12px;
+    margin-bottom:9px; cursor:pointer; transition:border-color .12s; }
+  .event-card:hover{ border-color:var(--text-faint); }
+  .event-card.selected{ border-color:var(--cyan); background:var(--raised); }
+  .ec-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:8px; margin-bottom:6px; }
+  .ec-name{ font-size:13.5px; font-weight:600; }
+  .ec-loc{ font-size:11px; color:var(--text-dim); margin-top:2px; }
+  .badge{ font-family:var(--mono); font-size:10px; padding:3px 7px; border-radius:5px; white-space:nowrap; border:1px solid transparent; }
+  .ec-meta{ display:flex; gap:10px; margin-top:8px; font-family:var(--mono); font-size:10.5px; color:var(--text-dim); flex-wrap:wrap; }
+  .ec-meta b{ color:var(--text); }
+  .risk-dot{ width:7px; height:7px; border-radius:50%; display:inline-block; margin-right:5px; }
+  .gt-tag{ font-size:9.5px; font-family:var(--mono); padding:2px 6px; border-radius:4px; }
+  .gt-tag.ok{ color:var(--ok); background:rgba(126,231,135,.1); }
+  .gt-tag.bad{ color:var(--bad); background:rgba(249,65,68,.1); }
+
+  .empty-state{ display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+    padding:40px 26px; color:var(--text-dim); gap:8px; height:100%; }
+  .empty-state .glyph{ font-size:26px; opacity:.5; margin-bottom:4px; }
+  .empty-state b{ color:var(--text); font-size:14px; font-weight:600; }
+  .empty-state p{ font-size:12.5px; line-height:1.5; margin:0; max-width:230px; }
+
+  .detail, .modelpane{ overflow-y:auto; padding:16px; flex:1; }
+  .detail-head{ margin-bottom:14px; }
+  .detail-head h2{ font-size:17px; margin:0 0 4px; }
+  .detail-head .loc{ font-size:12px; color:var(--text-dim); font-family:var(--mono); }
+  .back-link{ background:none; border:none; color:var(--text-dim); font-family:var(--mono); font-size:11.5px;
+    cursor:pointer; padding:0; margin-bottom:14px; }
+  .back-link:hover{ color:var(--cyan); }
+
+  .stat-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:16px; }
+  .stat-box{ background:var(--panel-2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; }
+  .stat-box span{ display:block; font-size:10.5px; color:var(--text-dim); margin-bottom:4px; }
+  .stat-box b{ font-family:var(--mono); font-size:15px; }
+
+  .section-label{ font-size:11px; color:var(--text-faint); font-family:var(--mono); margin:18px 0 9px; }
+  .section-label:first-of-type{ margin-top:0; }
+
+  .prob-row{ display:flex; align-items:center; gap:9px; margin-bottom:8px; font-size:12px; }
+  .prob-name{ width:112px; flex-shrink:0; color:var(--text-dim); }
+  .prob-track{ flex:1; height:7px; background:var(--panel-2); border-radius:4px; overflow:hidden; }
+  .prob-fill{ height:100%; border-radius:4px; }
+  .prob-val{ width:38px; text-align:right; font-family:var(--mono); font-size:11.5px; flex-shrink:0; }
+
+  .evidence-list{ display:flex; flex-direction:column; gap:9px; }
+  .evidence-item{ display:flex; justify-content:space-between; font-size:12.5px; padding:8px 10px;
+    background:var(--panel-2); border-radius:7px; border:1px solid var(--border); }
+  .evidence-item span:first-child{ color:var(--text-dim); }
+  .evidence-item span:last-child{ font-family:var(--mono); }
+
+  .risk-summary{ display:flex; align-items:center; gap:10px; padding:12px 14px; border-radius:9px;
+    border:1px solid var(--border); background:var(--panel-2); margin-bottom:16px; }
+  .risk-summary .rlabel{ font-size:11px; color:var(--text-dim); }
+  .risk-summary .rval{ font-family:var(--mono); font-size:16px; font-weight:600; }
+
+  .forecast-box{ border:1px solid var(--cyan-dim); background:rgba(79,209,197,.06); border-radius:10px;
+    padding:14px; margin-bottom:18px; }
+  .forecast-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+  .forecast-head b{ font-size:12.5px; color:var(--cyan); font-family:var(--mono); }
+  .trend-badge{ font-family:var(--mono); font-size:10.5px; padding:3px 9px; border-radius:12px; font-weight:600; }
+  .trend-badge.Rising{ background:rgba(249,65,68,.15); color:var(--risk-high); }
+  .trend-badge.Falling{ background:rgba(87,117,144,.2); color:#8fb4cc; }
+  .trend-badge.Stable{ background:rgba(243,114,44,.15); color:var(--risk-med); }
+  .forecast-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .fc-stat span{ display:block; font-size:10px; color:var(--text-dim); margin-bottom:3px; }
+  .fc-stat b{ font-family:var(--mono); font-size:17px; }
+  .sparkline{ display:flex; align-items:flex-end; gap:2px; height:34px; margin-bottom:6px; }
+  .spark-bar{ flex:1; background:var(--cyan); opacity:.35; border-radius:2px 2px 0 0; min-height:2px; }
+  .spark-bar.predicted{ opacity:.9; background:#ffd166; }
+  .spark-label{ font-size:9.5px; color:var(--text-faint); font-family:var(--mono); display:flex; justify-content:space-between; }
+
+  .gt-banner{ display:flex; align-items:center; gap:8px; padding:10px 12px; border-radius:8px; margin-bottom:16px;
+    font-size:12px; border:1px solid; }
+  .gt-banner.ok{ border-color:rgba(126,231,135,.35); background:rgba(126,231,135,.07); color:var(--ok); }
+  .gt-banner.bad{ border-color:rgba(249,65,68,.35); background:rgba(249,65,68,.07); color:var(--bad); }
+
+  .metric-hero{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:18px; }
+  .metric-card{ background:var(--panel-2); border:1px solid var(--border); border-radius:9px; padding:14px; text-align:center; }
+  .metric-card b{ display:block; font-family:var(--mono); font-size:26px; color:var(--cyan); }
+  .metric-card span{ font-size:11px; color:var(--text-dim); }
+
+  .cm-table{ width:100%; border-collapse:collapse; font-size:10.5px; font-family:var(--mono); margin-bottom:6px; }
+  .cm-table th, .cm-table td{ padding:5px 4px; text-align:center; border:1px solid var(--border-soft); }
+  .cm-table th{ color:var(--text-dim); font-weight:400; font-size:9.5px; }
+  .cm-table td.diag{ color:var(--ok); font-weight:600; }
+  .cm-hint{ font-size:10.5px; color:var(--text-faint); margin-bottom:16px; }
+
+  .feat-row{ display:flex; align-items:center; gap:9px; margin-bottom:7px; font-size:11.5px; }
+  .feat-name{ width:140px; flex-shrink:0; color:var(--text-dim); font-family:var(--mono); }
+  .feat-track{ flex:1; height:6px; background:var(--panel-2); border-radius:3px; overflow:hidden; }
+  .feat-fill{ height:100%; background:var(--cyan); border-radius:3px; }
+
+  .method-note{ font-size:11.5px; color:var(--text-dim); line-height:1.6; background:var(--panel-2);
+    border:1px solid var(--border); border-radius:8px; padding:12px 13px; margin-top:18px; }
+  .method-note b{ color:var(--text); }
+
+  ::-webkit-scrollbar{ width:8px; height:8px; }
+  ::-webkit-scrollbar-track{ background:transparent; }
+  ::-webkit-scrollbar-thumb{ background:var(--border); border-radius:8px; }
+  ::-webkit-scrollbar-thumb:hover{ background:var(--text-faint); }
+
+  @media (max-width:980px){
+    .layout{ grid-template-columns:1fr; grid-template-rows:auto 46vh 1fr; }
+    .sidebar{ border-right:none; border-bottom:1px solid var(--border); max-height:170px; }
+    .rpanel{ border-left:none; border-top:1px solid var(--border); }
+    .header-stats{ display:none; }
+    .basemap-btn{ padding:5px 8px; font-size:10px; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <div class="brand-text"><b>FlareEye</b><span>AI thermal event classifier</span></div>
+    </div>
+    <div class="header-stats">
+      <div class="hstat"><b id="statTotal">–</b><span>events classified</span></div>
+      <div class="hstat high"><b id="statHigh">–</b><span>high risk</span></div>
+      <div class="hstat model"><b id="statAcc">–</b><span>model accuracy</span></div>
+    </div>
+    <div class="live-pill"><div class="live-dot"></div>RandomForest · trained on 125 sites</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="side-block">
+        <div class="side-title">search</div>
+        <input class="search-box" id="searchBox" placeholder="Site, state, or ID…" />
+      </div>
+      <div class="side-block">
+        <div class="side-title">predicted classification</div>
+        <div id="catList"></div>
+      </div>
+      <div class="side-block">
+        <div class="side-title">risk priority</div>
+        <div class="risk-row" id="riskRow"></div>
+      </div>
+      <div class="side-block">
+        <div class="side-title">minimum model confidence</div>
+        <div class="slider-label">≥ <b id="confVal">0</b>%</div>
+        <input type="range" min="0" max="99" value="0" id="confSlider" />
+      </div>
+      <button class="reset-btn" id="resetBtn">Clear all filters</button>
+    </aside>
+
+    <div class="map-wrap">
+      <div id="map"></div>
+      <div class="map-toast" id="mapToast">– events plotted</div>
+      <div class="basemap-toggle" id="basemapToggle">
+        <div class="basemap-btn" data-base="dark">Dark</div>
+        <div class="basemap-btn active" data-base="streets">Streets</div>
+        <div class="basemap-btn" data-base="satellite">Satellite</div>
+      </div>
+      <div class="map-attribution" id="mapAttribution">© OpenStreetMap contributors</div>
+      <div class="legend">
+        <b>Predicted class</b>
+        <div class="legend-row"><span class="legend-dot" style="background:var(--c-fire)"></span>Industrial fire</div>
+        <div class="legend-row"><span class="legend-dot" style="background:var(--c-flare)"></span>Gas flare</div>
+        <div class="legend-row"><span class="legend-dot" style="background:var(--c-wild)"></span>Wildfire</div>
+        <div class="legend-row"><span class="legend-dot" style="background:var(--c-agri)"></span>Agricultural burning</div>
+        <div class="legend-row"><span class="legend-dot" style="background:var(--c-heat)"></span>Industrial heat</div>
+        <div class="legend-size-note">Marker size = radiative power (FRP)</div>
+      </div>
+    </div>
+
+    <div class="rpanel">
+      <div class="rtabs">
+        <div class="rtab active" data-tab="feed">Event feed</div>
+        <div class="rtab" data-tab="detail">Classification</div>
+        <div class="rtab" data-tab="model">Model</div>
+      </div>
+      <div class="feed" id="feedPane"></div>
+      <div class="detail" id="detailPane" style="display:none;"></div>
+      <div class="modelpane" id="modelPane" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const CATS = {
+  "Industrial Fire":      { color:"var(--c-fire)",  hex:"#f94144" },
+  "Gas Flare":            { color:"var(--c-flare)", hex:"#f3722c" },
+  "Wildfire":             { color:"var(--c-wild)",  hex:"#f9c74f" },
+  "Agricultural Burning": { color:"var(--c-agri)",  hex:"#90be6d" },
+  "Industrial Heat":      { color:"var(--c-heat)",  hex:"#577590" },
+};
+
+// ---- real output from the trained scikit-learn pipeline ----
+const EVENTS = __EVENTS_JSON__;
+const METRICS = __METRICS_JSON__;
+const FORECASTS = __FORECASTS_JSON__;
+const FORECAST_METRICS = __FORECAST_METRICS_JSON__;
+
+let activeCats = new Set(Object.keys(CATS));
+let activeRisks = new Set(["High","Medium","Low"]);
+let searchTerm = "";
+let minConfidence = 0;
+let selectedId = null;
+let markers = {};
+
+const map = L.map('map', { zoomControl:true, attributionControl:false }).setView([22.5, 80.5], 5);
+
+// three interchangeable basemaps: a dark ops-room view (default, matches
+// the thermal-monitoring theme), a labelled streets view for identifying
+// towns/roads/facility names, and real satellite imagery for visually
+// confirming what's actually on the ground at a site.
+const BASEMAPS = {
+  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom:19 }),
+  streets: L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom:19 }),
+  satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom:19 }),
+};
+const BASEMAP_ATTRIBUTION = {
+  dark: '© OpenStreetMap, CARTO',
+  streets: '© OpenStreetMap contributors',
+  satellite: 'Esri, Maxar, Earthstar Geographics',
+};
+let currentBasemap = 'streets';
+BASEMAPS[currentBasemap].addTo(map);
+
+document.querySelectorAll('.basemap-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const name = btn.dataset.base;
+    if(name === currentBasemap) return;
+    map.removeLayer(BASEMAPS[currentBasemap]);
+    BASEMAPS[name].addTo(map);
+    currentBasemap = name;
+    document.querySelectorAll('.basemap-btn').forEach(b => b.classList.toggle('active', b.dataset.base === name));
+    document.getElementById('mapAttribution').textContent = BASEMAP_ATTRIBUTION[name];
+  });
+});
+
+function frpToRadius(frp){ return 6 + Math.min(14, frp/40); }
+
+function buildMarker(ev){
+  const m = L.circleMarker([ev.lat, ev.lng], {
+    radius: frpToRadius(ev.frp), color:"rgba(15,18,24,.65)", weight:1.75,
+    fillColor: CATS[ev.predicted_class].hex, fillOpacity:.92, className:"thermal-marker"
+  });
+  m.bindPopup(`
+    <div class="popup-title">${ev.name}</div>
+    <div class="popup-sub">${ev.state} · ${ev.predicted_class}</div>
+    <div class="popup-sub" style="margin-top:6px;">FRP ${ev.frp} MW · ${ev.confidence}% confidence</div>
+  `);
+  m.on('click', () => selectEvent(ev.id));
+  return m;
+}
+EVENTS.forEach(ev => { markers[ev.id] = buildMarker(ev).addTo(map); });
+
+const catListEl = document.getElementById('catList');
+Object.keys(CATS).forEach(cat => {
+  const row = document.createElement('label');
+  row.className = 'cat-row';
+  row.innerHTML = `
+    <input type="checkbox" checked data-cat="${cat}">
+    <span class="cat-dot" style="background:${CATS[cat].color}"></span>
+    <span class="name">${cat}</span>
+    <span class="count">${EVENTS.filter(e=>e.predicted_class===cat).length}</span>`;
+  catListEl.appendChild(row);
+});
+catListEl.addEventListener('change', e => {
+  const cat = e.target.getAttribute('data-cat');
+  if(e.target.checked) activeCats.add(cat); else activeCats.delete(cat);
+  render();
+});
+
+const riskRowEl = document.getElementById('riskRow');
+["High","Medium","Low"].forEach(r => {
+  const btn = document.createElement('div');
+  btn.className = 'risk-btn active'; btn.dataset.risk = r; btn.textContent = r;
+  btn.addEventListener('click', () => {
+    if(activeRisks.has(r)){ activeRisks.delete(r); btn.classList.remove('active'); }
+    else { activeRisks.add(r); btn.classList.add('active'); }
+    render();
+  });
+  riskRowEl.appendChild(btn);
+});
+
+document.getElementById('searchBox').addEventListener('input', e => { searchTerm = e.target.value.toLowerCase(); render(); });
+document.getElementById('confSlider').addEventListener('input', e => {
+  minConfidence = parseInt(e.target.value);
+  document.getElementById('confVal').textContent = minConfidence;
+  render();
+});
+document.getElementById('resetBtn').addEventListener('click', () => {
+  activeCats = new Set(Object.keys(CATS));
+  activeRisks = new Set(["High","Medium","Low"]);
+  searchTerm = ""; minConfidence = 0;
+  document.getElementById('searchBox').value = "";
+  document.getElementById('confSlider').value = 0;
+  document.getElementById('confVal').textContent = 0;
+  document.querySelectorAll('#catList input').forEach(i => i.checked = true);
+  document.querySelectorAll('.risk-btn').forEach(b => b.classList.add('active'));
+  render();
+});
+
+document.querySelectorAll('.rtab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.rtab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    const which = tab.dataset.tab;
+    document.getElementById('feedPane').style.display = which === 'feed' ? 'block' : 'none';
+    document.getElementById('detailPane').style.display = which === 'detail' ? 'block' : 'none';
+    document.getElementById('modelPane').style.display = which === 'model' ? 'block' : 'none';
+    if(which === 'model') renderModelPane();
+  });
+});
+
+function filteredEvents(){
+  return EVENTS.filter(ev =>
+    activeCats.has(ev.predicted_class) &&
+    activeRisks.has(ev.risk_level) &&
+    ev.confidence >= minConfidence &&
+    (searchTerm === "" || ev.name.toLowerCase().includes(searchTerm) || ev.state.toLowerCase().includes(searchTerm) || ev.id.toLowerCase().includes(searchTerm))
+  );
+}
+
+function riskDotColor(r){ return r==="High" ? "var(--risk-high)" : r==="Medium" ? "var(--risk-med)" : "var(--risk-low)"; }
+
+function render(){
+  const list = filteredEvents();
+  const visibleIds = new Set(list.map(e=>e.id));
+  EVENTS.forEach(ev => {
+    const onMap = map.hasLayer(markers[ev.id]);
+    if(visibleIds.has(ev.id) && !onMap) markers[ev.id].addTo(map);
+    if(!visibleIds.has(ev.id) && onMap) map.removeLayer(markers[ev.id]);
+  });
+
+  const feed = document.getElementById('feedPane');
+  feed.innerHTML = "";
+  if(list.length === 0){
+    feed.innerHTML = `
+      <div class="empty-state">
+        <div class="glyph">◌</div>
+        <b>No events match these filters</b>
+        <p>Lower the confidence threshold or clear a filter to see classified events again.</p>
+      </div>`;
+  } else {
+    list.sort((a,b)=>b.risk_score-a.risk_score).forEach(ev => {
+      const card = document.createElement('div');
+      card.className = 'event-card' + (ev.id===selectedId ? ' selected' : '');
+      card.innerHTML = `
+        <div class="ec-top">
+          <div>
+            <div class="ec-name">${ev.name}</div>
+            <div class="ec-loc">${ev.state} · ${ev.id}</div>
+          </div>
+          <span class="badge" style="color:${CATS[ev.predicted_class].color}; border-color:${CATS[ev.predicted_class].color}55; background:${CATS[ev.predicted_class].color}18;">${ev.predicted_class}</span>
+        </div>
+        <div class="ec-meta">
+          <span><span class="risk-dot" style="background:${riskDotColor(ev.risk_level)}"></span>${ev.risk_level} risk</span>
+          <span>FRP <b>${ev.frp}</b> MW</span>
+          <span>Conf <b>${ev.confidence}%</b></span>
+          ${FORECASTS[ev.id] ? `<span class="trend-badge ${FORECASTS[ev.id].trend}" style="padding:2px 7px;">${FORECASTS[ev.id].trend}</span>` : ""}
+        </div>
+      `;
+      card.addEventListener('click', () => selectEvent(ev.id));
+      feed.appendChild(card);
+    });
+  }
+
+  document.getElementById('statTotal').textContent = list.length;
+  document.getElementById('statHigh').textContent = list.filter(e=>e.risk_level==="High").length;
+  document.getElementById('statAcc').textContent = Math.round(METRICS.accuracy*100) + "%";
+  document.getElementById('mapToast').textContent = `${list.length} event${list.length===1?"":"s"} plotted`;
+}
+
+function selectEvent(id){
+  selectedId = id;
+  const ev = EVENTS.find(e=>e.id===id);
+  map.flyTo([ev.lat, ev.lng], 7, { duration:.6 });
+  markers[id].openPopup();
+
+  document.querySelectorAll('.rtab').forEach(t=>t.classList.remove('active'));
+  document.querySelector('.rtab[data-tab="detail"]').classList.add('active');
+  document.getElementById('feedPane').style.display = 'none';
+  document.getElementById('modelPane').style.display = 'none';
+  document.getElementById('detailPane').style.display = 'block';
+
+  renderDetail(ev);
+  render();
+}
+
+function renderForecastBox(ev){
+  const fc = FORECASTS[ev.id];
+  if(!fc) return "";
+  const hist = fc.history_14d;
+  const maxVal = Math.max(...hist, fc.predicted_frp_next, 1);
+  const histBars = hist.map(v => `<div class="spark-bar" style="height:${Math.max(3, (v/maxVal)*34)}px" title="${v} MW"></div>`).join("");
+  const predBar = `<div class="spark-bar predicted" style="height:${Math.max(3, (fc.predicted_frp_next/maxVal)*34)}px" title="predicted: ${fc.predicted_frp_next} MW"></div>`;
+
+  return `
+    <div class="forecast-box">
+      <div class="forecast-head">
+        <b>NEXT-EVENT FORECAST</b>
+        <span class="trend-badge ${fc.trend}">${fc.trend}</span>
+      </div>
+      <div class="forecast-grid">
+        <div class="fc-stat"><span>Predicted FRP, next detection</span><b>${fc.predicted_frp_next} MW</b></div>
+        <div class="fc-stat"><span>Probability site is active tomorrow</span><b>${fc.recurrence_probability}%</b></div>
+      </div>
+      <div class="sparkline">${histBars}${predBar}</div>
+      <div class="spark-label"><span>14 days of history</span><span style="color:#ffd166;">predicted next →</span></div>
+    </div>
+  `;
+}
+
+function renderDetail(ev){
+  const pane = document.getElementById('detailPane');
+  const sortedCats = Object.keys(ev.probabilities).sort((a,b)=>ev.probabilities[b]-ev.probabilities[a]);
+
+  pane.innerHTML = `
+    <button class="back-link" id="backToFeed">← back to event feed</button>
+    <div class="detail-head">
+      <h2>${ev.name}</h2>
+      <div class="loc">${ev.state} · ${ev.id} · ${ev.source}</div>
+    </div>
+
+    <div class="gt-banner ${ev.correct ? 'ok' : 'bad'}">
+      ${ev.correct
+        ? `Model prediction matches the labelled ground truth (${ev.true_class}).`
+        : `Model predicted <b>${ev.predicted_class}</b> — labelled ground truth was <b>${ev.true_class}</b>.`}
+    </div>
+
+    ${renderForecastBox(ev)}
+
+    <div class="risk-summary">
+      <span class="risk-dot" style="background:${riskDotColor(ev.risk_level)}; width:11px; height:11px;"></span>
+      <div>
+        <div class="rlabel">Risk priority</div>
+        <div class="rval" style="color:${riskDotColor(ev.risk_level)}">${ev.risk_level} · score ${ev.risk_score}/100</div>
+      </div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-box"><span>Radiative power</span><b>${ev.frp} MW</b></div>
+      <div class="stat-box"><span>Brightness temp.</span><b>${ev.brightness_k} K</b></div>
+      <div class="stat-box"><span>Confidence tier</span><b>Tier ${ev.confidence_tier}</b></div>
+      <div class="stat-box"><span>Persistence</span><b>${ev.persistence_days} ${ev.persistence_days===1?"day":"days"}</b></div>
+    </div>
+
+    <div class="section-label">model classification breakdown</div>
+    ${sortedCats.map(c => `
+      <div class="prob-row">
+        <div class="prob-name">${c}</div>
+        <div class="prob-track"><div class="prob-fill" style="width:${ev.probabilities[c]}%; background:${CATS[c].color};"></div></div>
+        <div class="prob-val">${ev.probabilities[c]}%</div>
+      </div>
+    `).join("")}
+
+    <div class="section-label">supporting evidence</div>
+    <div class="evidence-list">
+      <div class="evidence-item"><span>Distance to industrial infrastructure</span><span>${ev.dist_infra_km} km</span></div>
+      <div class="evidence-item"><span>Land cover</span><span>${ev.land_cover}</span></div>
+      <div class="evidence-item"><span>Recurrence count</span><span>${ev.recurrence_count} detections</span></div>
+      <div class="evidence-item"><span>Wind speed</span><span>${ev.wind_kmh} km/h</span></div>
+      <div class="evidence-item"><span>Held out from training</span><span>${ev.split === 'test' ? 'Yes' : 'No'}</span></div>
+    </div>
+  `;
+  document.getElementById('backToFeed').addEventListener('click', () => {
+    document.querySelectorAll('.rtab').forEach(t=>t.classList.remove('active'));
+    document.querySelector('.rtab[data-tab="feed"]').classList.add('active');
+    document.getElementById('detailPane').style.display = 'none';
+    document.getElementById('feedPane').style.display = 'block';
+  });
+}
+
+function renderModelPane(){
+  const pane = document.getElementById('modelPane');
+  const labels = METRICS.confusion_matrix_labels;
+  const cm = METRICS.confusion_matrix;
+  const short = { "Industrial Fire":"Fire", "Gas Flare":"Flare", "Wildfire":"Wild", "Agricultural Burning":"Agri", "Industrial Heat":"Heat" };
+
+  pane.innerHTML = `
+    <div class="section-label" style="margin-top:0;">hold-out performance</div>
+    <div class="metric-hero">
+      <div class="metric-card"><b>${Math.round(METRICS.accuracy*100)}%</b><span>accuracy</span></div>
+      <div class="metric-card"><b>${Math.round(METRICS.macro_f1*100)}%</b><span>macro F1</span></div>
+    </div>
+    <p style="font-size:11.5px; color:var(--text-dim); margin:-8px 0 16px;">
+      RandomForest, evaluated on ${METRICS.n_test_sites} sites held out entirely from the
+      ${METRICS.n_train_sites}-site training set (site-level split — no site's detections
+      appear in both train and test).
+    </p>
+
+    <div class="section-label">confusion matrix</div>
+    <table class="cm-table">
+      <tr><th></th>${labels.map(l=>`<th>${short[l]}</th>`).join("")}</tr>
+      ${cm.map((row,i)=>`<tr><th>${short[labels[i]]}</th>${row.map((v,j)=>`<td class="${i===j?'diag':''}">${v}</td>`).join("")}</tr>`).join("")}
+    </table>
+    <div class="cm-hint">Rows = ground truth · columns = model prediction · diagonal = correct calls</div>
+
+    <div class="section-label">top feature importances</div>
+    ${METRICS.top_features.slice(0,8).map(f => `
+      <div class="feat-row">
+        <div class="feat-name">${f.feature.replace('land_cover_','')}</div>
+        <div class="feat-track"><div class="feat-fill" style="width:${Math.min(100, f.importance*400)}%"></div></div>
+      </div>
+    `).join("")}
+
+    <div class="method-note">
+      <b>How this model was trained.</b> Raw thermal detections (FIRMS/VIIRS-style: brightness
+      temperature, FRP, SWIR reflectance, confidence) across 180 candidate sites were grouped
+      into events with DBSCAN, enriched with distance-to-infrastructure, land cover and wind,
+      then a RandomForest classifier was fit on the resulting event-level feature table and
+      scored on a held-out set of entire sites it never saw during training.
+    </div>
+
+    <div class="section-label">next-event forecasting model</div>
+    <div class="metric-hero">
+      <div class="metric-card"><b>${FORECAST_METRICS.frp_mae}</b><span>FRP MAE (MW)</span></div>
+      <div class="metric-card"><b>${Math.round(FORECAST_METRICS.recurrence_accuracy*100)}%</b><span>recurrence accuracy</span></div>
+    </div>
+    <p style="font-size:11.5px; color:var(--text-dim); margin:-8px 0 16px;">
+      Two RandomForest models predict what each site does <b>tomorrow</b>: a regressor for
+      next-day radiative power (FRP) and a classifier for whether the site stays active.
+      Evaluated on a time-based holdout — trained on the first ${FORECAST_METRICS.train_test_day_cutoff}
+      days of the year, tested on the remaining days, across ${FORECAST_METRICS.n_test_samples.toLocaleString()}
+      unseen (site, day) samples.
+    </p>
+    <div class="method-note">
+      <b>Features used to forecast.</b> Lagged FRP (last 3 days), 7-day rolling mean/max and
+      active-rate, days since the last detection, persistence-so-far, cumulative detection count,
+      distance to infrastructure, land cover, and the classifier's predicted category — the same
+      inputs a real deployment would have available in real time.
+    </div>
+  `;
+}
+
+document.getElementById('detailPane').innerHTML = `
+  <div class="empty-state">
+    <div class="glyph">▲</div>
+    <b>No event selected</b>
+    <p>Choose a thermal event from the map or feed to see the model's full classification breakdown and evidence.</p>
+  </div>`;
+
+render();
+</script>
+</body>
+</html>
